@@ -103,13 +103,13 @@ video{
 	margin: 0 auto;
 }
 section{
-  background-color: #8d543b;
+  background-color: #2a2a2a;
   /*background-color: #fff;*/
   margin-top: 0em;
   padding: 3em;
   display: flex;
   flex-flow: row wrap;
-  color: #d6e6ca;
+  color: white;
 }
 .section-a,
 .section-b{
@@ -122,7 +122,7 @@ section{
   margin: 1rem 1rem 2rem;
   color: #fff;
   position: absolute;
-  transition: all 0.3s;
+  transition: all 0.1s;
   z-index: 10;
 }
 .nav .top-nav:hover {
@@ -511,9 +511,102 @@ section{
   flex: 0 0 50%;
 }
 
+/************************* Subscrible *****************************/
+.part6{
+  background-color: white;
+}
+.subscribe {
+  background-color: white;
+  height: 550px;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ;
+}
+.email-form {
+  height: 5vw;
+  width: 50vw;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0px 7px 6px rgba(255, 0, 0, 0.2);
+  margin-top: 5vw;
+  align-items: stretch;
+  justify-content: center;
+  transition: all 3s;
+}
+[class*="-field"]{
+  /*flex-basis: 50%;*/
+  border: 1px solid #e35a65;
+  font-size: 1.7vw;
+  font-family: "Poiret One", cursive;
+  transition: all 0.3s;
+}
+.email-field {
+  width: 50%;
+  border-right: 0;
+  background-color: white;
+}
+.button-field {
+  width: 50%;
+  color: white;
+  background-color: #e35a65;
+  border-radius: 0 5px 5px 0;
+}
+.button-field:hover {
+  color: #e35a65;
+  background-color: #fff;
+}
+.sub-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e35a65;
+  font-size: 1.7vw;
+  font-family: "Poiret One", cursive;
+}
+.sub-text span{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.box {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 0;
+  left: 0;
+  border-top: 200px solid #e35a65;
+  border-right: 200px solid transparent;
+}
+.box3 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: 0;
+  right: 0;
+  border-bottom: 200px solid pink;
+  border-left: 200px solid transparent;
+}
+.box2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  left: 0;
+  border-top: 100px solid pink;
+  border-right: 100px solid #e35a65;
+}
 
-/**                 RESPONSIVE                        **/
-/****************  For Tablet & Laptop ******************/
+
+
+/*=====================================================
+                    RESPONSIVE
+=======================================================*/
+/*=======================================================
+=================For Tablet & Laptop
+========================================================*/
 @media (min-width: 45rem) {
   .home-book{
     height: 100vh;
@@ -621,7 +714,9 @@ section{
   }
 }
 
-/**************  For Laptop only ********************/
+/*===================================================
+====================For Laptop only
+=====================================================*/
 @media (min-width: 60rem) {
   /*********** new-released **************/
   .new-released-bg {
