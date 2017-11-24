@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<title>Home Page</title>
@@ -23,8 +24,10 @@
 		<div class="home-book">
 			<div class="nav">
 				<a class="top-nav cart" href="#"><i class="fa fa-shopping-cart"></i></a>
-				<a class="top-nav menu" href="#">MENU</a>
+				<!--<a class="top-nav menu" style="display: none" href="#">MENU</a>-->
+
 			</div>
+
 			<div class="">
 				<h1 class="title">So many books,<br>So little time</h1>
 				<a href="#" class="btn" id="button">Explore</a>
@@ -32,8 +35,28 @@
 			<a href="#" class="logo" id="logo">sealBook</a>
 		</div> <!-- Home book -->
 
-
 	</header>
+
+	<label>
+	<input type='checkbox'>
+	<span class='menu'>
+		<span class='hamburger top-nav'></span>
+	</span>
+	<ul>
+		<li>
+			<a href='index.html'>Home</a>
+		</li>
+		<li>
+			<a href='about.html'>About</a>
+		</li>
+		<li>
+			<a href='book_garden.html'>Book Garden</a>
+		</li>
+		<li>
+			<a href='author.html'>Authors</a>
+		</li>
+	</ul>
+	</label>
 
 	<div class="part2">
 		<div class="new-released-bg"></div>

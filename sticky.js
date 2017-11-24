@@ -29,6 +29,7 @@ function handle(delta) {
 
 var logo = document.getElementById("logo");
 var nav = document.getElementsByClassName("top-nav");
+console.log(nav);
 var sticky = logo.offsetTop;
 var newBook = [
   '<strong><a href="#">Battle Royale</a></strong><span>by: <a href="#"> Koushun Takami</a></span><p>Koushun Takami\'s notorious high-octane thriller is based on an irresistible premise: a class of junior high school students is taken to a deserted island where, as part of a ruthless authoritarian program,...</p>',
@@ -67,26 +68,38 @@ function myFunction() {
   }
   if (wScroll>=$('.part2').offset().top - 50) {
     nav[0].style.color="#0a0a0a";
-    nav[1].style.color="#0a0a0a";
+    nav[1].style.background="#0a0a0a";
+    $( "<style>label .hamburger:after { background: #0a0a0a; }</style>" ).appendTo( "head" );
+    $( "<style>label .hamburger:before { background: #0a0a0a; }</style>" ).appendTo( "head" );
   }else {
     nav[0].style.color="#fff";
-    nav[1].style.color="#fff";
+    nav[1].style.background="#fff";
+    $( "<style>label .hamburger:after { background: #fff; }</style>" ).appendTo( "head" );
+    $( "<style>label .hamburger:before { background: #fff; }</style>" ).appendTo( "head" );
   }
   if (wScroll>=$('.part3').offset().top -50) {
     nav[0].style.color="#cbe3c6";
-    nav[1].style.color="#cbe3c6";
+    nav[1].style.background="#cbe3c6";
+    $( "<style>label .hamburger:after { background: #cbe3c6; }</style>" ).appendTo( "head" );
+    $( "<style>label .hamburger:before { background: #cbe3c6; }</style>" ).appendTo( "head" );
   }
   if (wScroll>=$('.part4').offset().top -50) {
     nav[0].style.color="#e9696e";
-    nav[1].style.color="#e9696e";
+    nav[1].style.background="#e9696e";
+    $( "<style>label .hamburger:after { background: #e9696e; }</style>" ).appendTo( "head" );
+    $( "<style>label .hamburger:before { background: #e9696e; }</style>" ).appendTo( "head" );
   }
   if (wScroll>=$('.part5').offset().top -50) {
     nav[0].style.color="white";
-    nav[1].style.color="white";
+    nav[1].style.background="white";
+    $( "<style>label .hamburger:after { background: #fff; }</style>" ).appendTo( "head" );
+    $( "<style>label .hamburger:before { background: #fff; }</style>" ).appendTo( "head" );
   }
   if (wScroll>=$('.part6').offset().top -50) {
     nav[0].style.color="#1a1a1a";
-    nav[1].style.color="#1a1a1a";
+    nav[1].style.background="#1a1a1a";
+    $( "<style>label .hamburger:after { background: #1a1a1a; }</style>" ).appendTo( "head" );
+    $( "<style>label .hamburger:before { background: #1a1a1a; }</style>" ).appendTo( "head" );
   }
 
 
@@ -283,7 +296,9 @@ $('.top-authors .author').mouseout(function () {
 $(".button-field").mouseover(function(){
   $(".subscribe").css('background-color','#2a2a2a');
   nav[0].style.color="#fff";
-  nav[1].style.color="#fff";
+  nav[1].style.background="#fff";
+  $( "<style>label .hamburger:after { background: #fff; }</style>" ).appendTo( "head" );
+  $( "<style>label .hamburger:before { background: #fff; }</style>" ).appendTo( "head" );
 });
 $(".email-field").focus(function(){
   $(".button-field").css('width','20%');
@@ -298,5 +313,7 @@ $(".email-field").blur(function(){
 $(".button-field").mouseout(function(){
   $(".subscribe").css('background-color','white');
   nav[0].style.color="#2a2a2a";
-  nav[1].style.color="#2a2a2a";
+  nav[1].style.background="#2a2a2a";
+  $( "<style>label .hamburger:after { background: #2a2a2a; }</style>" ).appendTo( "head" );
+  $( "<style>label .hamburger:before { background: #2a2a2a; }</style>" ).appendTo( "head" );
 });

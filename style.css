@@ -12,6 +12,7 @@ body {
 	padding: 0px;
   background: #fff;
   text-align: center;
+  text-rendering: optimizeLegibility;
 }
 body {
   overflow-x: hidden;
@@ -19,7 +20,6 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  /*overflow: hidden;*/
   scroll-snap-points-y: repeat(9%);
   scroll-snap-type: mandatory;
   scroll-snap-destination: 100% 0%;
@@ -141,6 +141,112 @@ section{
   left: 0;
 }
 
+label .menu {
+  position: fixed;
+  left: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  //box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+  cursor: pointer;
+}
+label input {
+  display: none;
+}
+label .hamburger {
+  position: fixed;
+  top: 35px;
+  left: 30px;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  transform-origin: center;
+  transition: 0.5s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+label .hamburger:before {
+  top: -10px;
+}
+label .hamburger:after {
+  bottom: -10px;
+}
+label input:checked + .menu {
+  box-shadow: 0 0 0 110vw #5a5a5a, 0 0 100px 110vh pink;
+  background: #5a5a5a;
+}
+label input:checked + .menu .hamburger {
+  transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+label input:checked + .menu + ul {
+  transform: translate(0%,0%);
+}
+label ul {
+  z-index: 200;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  list-style-type: none;
+  font-size: 3vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transform: translate(-100%,0%);
+  transition: 0.5s 0s ease-in-out;
+}
+label li {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 50%;
+}
+label a {
+  font-family: "Poiret One", cursive;
+  font-weight: bolder;
+  content: none;
+  background: radial-gradient(circle, rgba(250, 55, 89,0.7) 0.2em, transparent 0.2em) center/1em 1em;
+  height: 12vw;
+  width: 30vw;
+  padding-top: 4vw;
+  border: 7px solid rgba(250, 55, 89,0.7);
+  border-radius: 15px;
+  color: rgba(255, 255, 255,0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+label a:hover {
+  background: radial-gradient(circle, rgba(250, 55, 89,1) 0.2em, transparent 0.2em) center/0.1em 0.1em;
+  color: white;
+  border: 7px solid white;
+  /*background-image: repeating-linear-gradient(180deg, white 7px, white 7px, transparent 21px);*/
+  /*background-size: 12px 16px;*/
+  transition: all 0.5s ease;
+}
 
 /************* LOGO ****************/
 .logo{
@@ -153,17 +259,14 @@ section{
   font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  /*z-index: 20;*/
   transition: color 1s;
+  will-change: scroll-position;
   /*background: pink;
   border-radius: 25px;*/
 }
-.logo:hover{
-  color: #fff;
-}
 
 
-/******************** new-released ***********************/
+/******************** New-Released ***********************/
 .new-released{
   display: flex;
   flex-flow: row wrap;
@@ -208,7 +311,7 @@ section{
   transition: all 1s;
 }
 .new-released .name:hover{
-  transform: skewX(-20deg);
+  transform: skewX(-15deg);
 }
 .new-released .book-author{
   font-size: 0.75rem;
@@ -459,6 +562,7 @@ section{
   border: 2px solid white;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.7);
   transform: rotateY(-90deg);
+  will-change: transform;
   opacity: 0;
   transition: all 1s;
 }
@@ -761,19 +865,19 @@ section{
 /************************ Mobile Zise ****************/
 /*@media only screen and (max-width : 768px) {
 	.noanimated {
-		/*CSS transitions*/
+
 		-o-transition-property: none !important;
 		-moz-transition-property: none !important;
 		-ms-transition-property: none !important;
 		-webkit-transition-property: none !important;
 		transition-property: none !important;
-		/*CSS transforms*/
+
 		-o-transform: none !important;
 		-moz-transform: none !important;
 		-ms-transform: none !important;
 		-webkit-transform: none !important;
 		transform: none !important;
-		/*CSS animations*/
+
 		-webkit-animation: none !important;
 		-moz-animation: none !important;
 		-o-animation: none !important;
