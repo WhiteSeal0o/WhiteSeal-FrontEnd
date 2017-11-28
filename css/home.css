@@ -333,7 +333,7 @@ label a:hover {
   width: 28vw;
   border-radius: 50%;
   position: relative;
-  background-image: url(cover/fiction1.jpg);
+  background-image: url(../cover/fiction1.jpg);
   background-attachment: fixed;
   background-repeat: repeat-y;
   background-size: auto;
@@ -816,6 +816,20 @@ label a:hover {
   .discount {
     /*background-image: url(cover/fiction.jpg);*/
   }
+}
+
+/*================================================================================
+============================== FOOTER ============================================
+=================================================================================*/
+.footer {
+	background: #5a5a5a;
+	height: 40vw;
+	color: #fff;
+	font-size: 10vw;
+	font-family: "Cormorant Garamond", cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*===================================================
