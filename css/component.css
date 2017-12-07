@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Cormorant+Garamond:500i,700|Dosis:200,600|EB+Garamond:400i|Josefin+Slab|Montserrat|Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Cormorant+Garamond:500i,700|Dosis:200,600|EB+Garamond:400i|Josefin+Slab|Montserrat|Ubuntu|Lobster');
 
 *,*::before,*::after{
 	box-sizing: border-box;
@@ -518,8 +517,6 @@ body {
 	width: 90vw;
 	height: 80vh;
 	overflow-x: hidden;
-	overflow-y: hidden;
-	/*border: 3px solid #333;*/
 	z-index: 1000;
 	overflow-y: scroll;
 }
@@ -532,7 +529,6 @@ body {
 	flex-basis: 60%;
 	display: flex;
 	justify-content: center;
-	/*align-items: center;*/
 	box-shadow: 4px 0 7px rgba(34, 34, 34, 0.7);
 	overflow: hidden;
 }
@@ -549,13 +545,11 @@ body {
 	font-family: "Ubuntu", cursive;
 	color: #222;
 	order: 1;
-	/*overflow-y: scroll;*/
 }
 
 .product-detail .content .name {
 	font-size: 3.5em;
 	font-weight: 800;
-	/*flex: 0 0 100%;*/
 }
 
 .product-detail .content .author {

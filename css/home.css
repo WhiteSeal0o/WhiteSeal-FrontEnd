@@ -508,7 +508,7 @@ label a:hover {
   position: relative;
   height: 56vw;
   background-color: #1a1a1a;
-  background-image: url(background/author-bg.jpg);
+  background-image: url(../background/author-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: overlay;
@@ -809,7 +809,7 @@ label a:hover {
     position: absolute;
     font-size: 1.75rem;
     bottom: 2%;
-    right: 25%;3
+    right: 25%;
   }
 
   /****************** Discount ************************/

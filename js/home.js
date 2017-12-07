@@ -188,9 +188,9 @@ for (var i = 0; i < 3; i++) {
 }
 
     //Default text value
-$('.newest-rl .large-box').css('background-image','url("http://localhost/btl/newest-released/2.jpg")');
+$('.newest-rl .large-box').css('background-image','url("newest-released/2.jpg")');
 $('.newest-rl .large-box .book').css('background-image','url(newest-released/2.jpg)');
-$('.best-sl .large-box').css('background-image','url("http://localhost/btl/best-seller/2.jpg")');
+$('.best-sl .large-box').css('background-image','url("best-seller/2.jpg")');
 $('.best-sl .large-box .book').css('background-image','url(best-seller/2.jpg)');
 
     //newest rl
@@ -234,7 +234,7 @@ $('.best-sl .small-box').mouseout(function() {
 ****************************************************************/
   //Data
 for (var i = 0; i < 5; i++) {
-  $('.circles .author:eq('+ i +')').css('background-image','url("author/'+(i+1)+'.jpg")');
+  $('.circles .author:eq('+ i +')').css('background-image','url("authors/'+(i+1)+'.jpg")');
   $('.circles .author:eq('+ i +')').data("author",authors[i]);
   $('.circles .author:eq('+ i +')').data("author",authors[i]);
 }
