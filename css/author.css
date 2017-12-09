@@ -44,13 +44,13 @@ a {
   font-size: 2.1vw;
   border: 1px solid rgba(255, 255, 255, 0);
   transition: all .7s;
-  transform: rotateZ(0) translateX(-50%);
+  transform: translateX(-50%)  rotateZ(-90deg) ;
 }
 .back:hover {
   border: 1px solid rgba(255, 255, 255, 1);
   color: #fff;
   background: #111;
-  transform: rotateZ(0) translateX(0);
+  transform: translateX(0) rotateZ(0) ;
 }
 
 /* Container */
