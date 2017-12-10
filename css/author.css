@@ -82,6 +82,7 @@ a {
 }
 .info-container .info {
   display: contents;
+  grid-column: span 2;
 }
 .info-container .info > * {
   margin: 0 10%;
@@ -144,7 +145,7 @@ h3 {
 
 .product-detail {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
   position: fixed;
@@ -180,14 +181,13 @@ h3 {
   padding: 2% 5% 7% 5%;
   display: flex;
   flex-flow: row wrap;
-  font-size: 1.4em;
   font-family: "Ubuntu", cursive;
   color: #222;
   order: 1;
 }
 
 .product-detail .content .name {
-  font-size: 3.5em;
+  font-size: 6vw;
   font-weight: 800;
 }
 
@@ -201,6 +201,7 @@ h3 {
 .product-detail .content .intro p {
   margin-top: 50% !important;
   font-family: "EB Garamond", cursive;
+  font-size: 1.7vw;
 }
 
 .product-detail .btn {
@@ -209,13 +210,13 @@ h3 {
   left: 60%;
   transition: transfom .5s ease;
   transform: translateX(-50%) translateY(-50%);
-  height: 12%;
+  height: 5vw;
   width: 20%;
-  background: pink;
   display: flex;
   font-family: "Dosis", cursive;
   font-weight: bolder;
   box-shadow: 4px 4px 7px rgba(34, 34, 34, 0.5);
+  font-size: 1.2vw;
 }
 
 .product-detail .btn * {

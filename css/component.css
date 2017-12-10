@@ -399,7 +399,7 @@ body {
 	height: 10%;
 	background: #fff;
 	font-family: "Dosis", cursive;
-	font-size: 1.2em;
+	font-size: 1.2vw;
 	font-weight: bolder;
 	cursor: pointer;
 	position: relative;
@@ -498,142 +498,140 @@ body {
 ============================== Product Detail ===================================
 ===========================================================================*/
 .product-popup {
-	z-index: 9999;
+  z-index: 9999;
 }
 
 .product-detail {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	/*display: none;*/
-	position: fixed;
-	top: 50%;
-	/*left: 51.5%;*/
-	left: 50.5%;
-	transition: all .7s ease;
-	transform: translate(-50%,-50%) scale(0);
-	background: #fff;
-	width: 90vw;
-	height: 80vh;
-	overflow-x: hidden;
-	z-index: 1000;
-	overflow-y: scroll;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;
+  top: 50%;
+  left: 50.5%;
+  transition: all .7s ease;
+  transform: translate(-50%,-50%) scale(0);
+  background: #fff;
+  width: 90vw;
+  height: 80vh;
+  overflow-x: hidden;
+  z-index: 1000;
+  overflow-y: scroll;
 }
 .product-detail.popup {
-	transform: translate(-50%,-50%) scale(1);
-	box-shadow: 0 21px 21px rgba(34, 34, 34, 0.8);
+  transform: translate(-50%,-50%) scale(1);
+  box-shadow: 0 21px 21px #010101;
 }
 
 .product-detail .img {
-	flex-basis: 60%;
-	display: flex;
-	justify-content: center;
-	box-shadow: 4px 0 7px rgba(34, 34, 34, 0.7);
-	overflow: hidden;
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 0 7px rgba(34, 34, 34, 0.7);
+  overflow: hidden;
 }
 .product-detail .img img {
-	min-width: 100%;
+  min-width: 100%;
 }
 
 .product-detail .content {
-	flex-basis: 40%;
-	padding: 2% 5% 7% 5%;
-	display: flex;
-	flex-flow: row wrap;
-	font-size: 1.4em;
-	font-family: "Ubuntu", cursive;
-	color: #222;
-	order: 1;
+  flex-basis: 40%;
+  padding: 2% 5% 7% 5%;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Ubuntu", cursive;
+  color: #222;
+  order: 1;
 }
 
 .product-detail .content .name {
-	font-size: 3.5em;
-	font-weight: 800;
+  font-size: 6vw;
+  font-weight: 800;
 }
 
 .product-detail .content .author {
-	margin-left: .5vw;
-	color: #222;
-	font-size: 0.75em;
-	text-decoration: none;
+  margin-left: .5vw;
+  color: #222;
+  font-size: 0.75em;
+  text-decoration: none;
 }
 
 .product-detail .content .intro p {
-	margin-top: 50% !important;
-	font-family: "EB Garamond", cursive;
+  margin-top: 50% !important;
+  font-family: "EB Garamond", cursive;
+  font-size: 1.7vw;
 }
 
 .product-detail .btn {
-	position: absolute;
-	bottom: 10%;
-	left: 60%;
-	transition: transfom .5s ease;
-	transform: translateX(-50%) translateY(-50%);
-	height: 12%;
-	width: 20%;
-	background: pink;
-	display: flex;
-	font-family: "Dosis", cursive;
-	font-weight: bolder;
-	box-shadow: 4px 4px 7px rgba(34, 34, 34, 0.5);
+  position: absolute;
+  bottom: 10%;
+  left: 60%;
+  transition: transfom .5s ease;
+  transform: translateX(-50%) translateY(-50%);
+  height: 5vw;
+  width: 20%;
+  display: flex;
+  font-family: "Dosis", cursive;
+  font-weight: bolder;
+  box-shadow: 4px 4px 7px rgba(34, 34, 34, 0.5);
+  font-size: 1.2vw;
 }
 
 .product-detail .btn * {
-	flex: 0 0 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	overflow: hidden;
-	position: relative;
-	transition: all .5s ease;
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all .5s ease;
 }
 
 .product-detail .btn .cart {
-	color: #222;
-	background-color: #fff;
+  color: #222;
+  background-color: #fff;
 }
 
 .product-detail .btn .price {
-	color: #fff;
-	background-color: #222;
+  color: #fff;
+  background-color: #222;
 }
 
 .product-detail .btn .bg,
 .product-detail .btn span {
-	display: flex;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .product-detail .btn .cart .bg {
-	transform: translateX(100%);
-	background-color: #222;
+  transform: translateX(100%);
+  background-color: #222;
 }
 
 .product-detail .btn .price .bg {
-	transform: translateX(-100%);
-	background-color: #fff;
+  transform: translateX(-100%);
+  background-color: #fff;
 }
 
 .product-detail .btn.reverse .bg,
 .product-detail .btn.reverse span  {
-	transform: translateX(0);
-	opacity: 1 !important;
+  transform: translateX(0);
+  opacity: 1 !important;
 }
 
 .product-detail .btn .cart span {
-	opacity: 0;
-	color: #fff;
+  opacity: 0;
+  color: #fff;
 }
 
 .product-detail .btn .price span {
-	opacity: 0;
-	color: #222;
+  opacity: 0;
+  color: #222;
 }
 
 
