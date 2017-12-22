@@ -5,17 +5,5 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHP" type="php">
-        <CLASSES>
-          <root url="file://C:/wamp64/bin/php/php7.1.9/php.exe" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://C:/wamp64/bin/php/php7.1.9/php.exe" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
